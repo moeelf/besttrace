@@ -25,6 +25,6 @@ ip_addr=(广州电信 上海电信 厦门电信 重庆联通 成都联通 上海
 for i in {0..7}
 do
 	echo ${ip_addr[$i]}
-	./besttrace -q1 g cn ${ip_list[$i]}
+	./besttrace -q1 -g cn ${ip_list[$i]}
 	next
 done
